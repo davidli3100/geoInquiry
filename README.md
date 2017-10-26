@@ -1,0 +1,2 @@
+# geoInquiry
+GitHub Pages
