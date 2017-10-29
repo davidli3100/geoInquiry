@@ -33,7 +33,7 @@
       ]
     },
     "versionFirst": "4.3.4",
-    "uniqCompNum": 16,
+    "uniqCompNum": 25,
     "versionPublish": "4.3.4"
   },
   "pages": {
@@ -578,9 +578,66 @@
             }
           },
           "_name": "content2",
-          "_customHTML": "<section class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote><p><b>MIT&nbsp;<span style=\"font-style: normal;\">- Researchers at MIT have found a new way of converting Carbon Dioxide Emissions (CO2) into Carbon Monoxide (CO). </span></b></p><p><span style=\"font-style: normal;\"><b><br></b>Carbon Monoxide is the base and first step in converting emissions into usable green fuels, like hydrogen or ethanol. Using an advanced version of previous catalysts, scientists were able to expand their pores and increase CO output efficiency.&nbsp;</span></p><p><span style=\"font-size: 1.09rem; font-style: normal;\">Using renewable sources of electricity, the researchers create a process designed to replace and supplement renewable sources, when interupted.&nbsp;</span><span style=\"font-size: 1.09rem;\">(Such as replacing solar panels when they can't produce energy during the night)</span></p><p><span style=\"font-style: normal;\">This entire process has become much more efficient in producing products with Hydrogen and CO in them, rather than more Carbon being released. CO can be converted into many different liquid fuels, such as ethanol, shown below.&nbsp;</span></p><p>Using the MIT Researcher's extremely efficient process of converting CO2 to CO, researchers around the world can now mark this problem as solved and proceed to the next big step; converting CO to liquid fuels.&nbsp;</p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote><p><b>MIT&nbsp;<span style=\"font-style: normal;\">- Researchers at MIT have found a new way of converting Carbon Dioxide Emissions (CO2) into Carbon Monoxide (CO). </span></b></p><p><span style=\"font-style: normal;\"><b><br></b>Carbon Monoxide is the base and first step in converting emissions into usable green fuels, like hydrogen or ethanol. Using an advanced version of previous catalysts, scientists were able to expand their pores and increase CO output efficiency.&nbsp;</span></p><p><span style=\"font-size: 1.09rem; font-style: normal;\">Using renewable sources of electricity, the researchers create a process designed to replace and supplement renewable sources, when interupted.&nbsp;</span><span style=\"font-size: 1.09rem;\">(Such as replacing solar panels when they can't produce energy during the night)</span></p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "qz7twydf0Q",
           "_anchor": "content2-6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "background": "@bgColor",
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".image-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "figcaption": {
+              "position": "relative",
+              "div": {
+                "position": "absolute",
+                "bottom": "0",
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "image1",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">        \n        \n        <input type=\"range\" inline title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"59\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n            <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/mitco2conversion-1000x667.jpg\" width=\"1400\" alt=\"Mobirise\" title>\n                <figcaption class=\"mbr-figure-caption mbr-figure-caption-over\" mbr-if=\"showText\">\n                    <div mbr-text class=\"container pb-5 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-1\">\n                        Create awesome websites!\n                    </div>\n                </figcaption>\n            </div>\n    </figure>\n</section>",
+          "_cid": "qztibJhwW9",
+          "_anchor": "image1-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote><p><span style=\"font-style: normal;\">This entire process has become much more efficient in producing products with Hydrogen and CO in them, rather than more Carbon being released. CO can be converted into many different liquid fuels, such as ethanol, shown below. \n</span></p><p><span style=\"font-style: normal;\">\n</span></p><p><span style=\"font-style: normal;\">Using the MIT Researcher's extremely efficient process of converting CO2 to CO, researchers around the world can now mark this problem as solved and proceed to the next big step; converting CO to liquid fuels.&nbsp;</span></p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content2-k",
+          "_cid": "qztiTCYg2u",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
