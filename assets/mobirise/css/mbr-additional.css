@@ -1836,29 +1836,6 @@ body {
 .cid-qztiTCYg2u blockquote {
   color: #767676;
 }
-.cid-qztny5jsTA {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
-}
-.cid-qztny5jsTA .line {
-  background-color: #01c152;
-  color: #01c152;
-  align: center;
-  height: 2px;
-  margin: 0 auto;
-}
-.cid-qztny5jsTA .section-text {
-  padding: 2rem 0;
-}
-.cid-qztny5jsTA .inner-container {
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .cid-qztny5jsTA .inner-container {
-    width: 100% !important;
-  }
-}
 .cid-qztnSsvtPA {
   padding-top: 60px;
   padding-bottom: 60px;
